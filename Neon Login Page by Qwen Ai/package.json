@@ -1,0 +1,12 @@
+{
+    "name": "neon-login-signup",
+    "version": "1.0.0",
+    "description": "A neon-themed login and signup page with backend storage.",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.21.2"
+    }
+}

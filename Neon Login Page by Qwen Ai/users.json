@@ -1,0 +1,42 @@
+[
+  {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "password": "password123"
+  },
+  {
+    "name": "smtanvir",
+    "email": "sm@example.com",
+    "password": "password123"
+  },
+  {
+    "name": "injam",
+    "email": "injam@test.com",
+    "password": "12345678"
+  },
+  {
+    "name": "Qwert",
+    "email": "qwert@test.com",
+    "password": "12345678"
+  },
+  {
+    "name": "qwert",
+    "email": "qwert@a.b",
+    "password": "12345678"
+  },
+  {
+    "name": "qwert",
+    "email": "qwert@a.bc",
+    "password": "12345678"
+  },
+  {
+    "name": "tanvir",
+    "email": "tanvir@g.c",
+    "password": "123456"
+  },
+  {
+    "name": "Test",
+    "email": "test@stanvir.dev",
+    "password": "admin123"
+  }
+]
