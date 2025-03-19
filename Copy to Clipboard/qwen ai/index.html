@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Alertify.js CDN -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+    <style>
+        /* কাস্টম নিওন থিম */
+        .alertify .ajs-dialog {
+            background: #0a0a0a !important;
+            border: 2px solid #00f3ff !important;
+            box-shadow: 0 0 20px #00f3ff;
+            animation: neon-glow 1.5s infinite alternate;
+        }
+
+        .alertify .ajs-message {
+            color: #00f3ff !important;
+            text-shadow: 0 0 5px #00f3ff;
+        }
+
+        @keyframes neon-glow {
+            from { box-shadow: 0 0 10px #00f3ff; }
+            to { box-shadow: 0 0 30px #00f3ff, 0 0 60px #00f3ff; }
+        }
+    </style>
+</head>
+<body>
+    <p><span>কপি করুন</span> <span>এখানে ক্লিক করুন</span></p>
+
+    <script>
+        document.body.addEventListener('click', function(e) {
+            const paragraph = e.target.closest('p');
+            if (paragraph) {
+                navigator.clipboard.writeText(paragraph.textContent)
+                    .then(() => {
+                        // সফল কপি হলে Alertify.js অ্যালার্ট দেখান
+                        alertify.success('Copied!');
+                        
+                        // অতিরিক্ত: টেক্সটের রঙ পরিবর্তন
+                        paragraph.style.color = '#00ff00';
+                        setTimeout(() => paragraph.style.color = '', 500);
+                    })
+                    .catch(err => {
+                        alertify.error('কপি করতে ব্যর্থ!');
+                        console.error(err);
+                    });
+            }
+        });
+    </script>
+</body>
+</html>

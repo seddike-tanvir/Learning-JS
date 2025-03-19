@@ -1,0 +1,15 @@
+/project-folder
+  /public
+    /audio
+      - song1.mp3
+      - song2.mp3
+    /video
+      - video1.mp4
+      - video2.mp4
+    /css
+      - style.css
+    /js
+      - script.js
+    index.html
+  server.js
+  package.json

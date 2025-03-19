@@ -38,5 +38,10 @@
     "name": "Test",
     "email": "test@stanvir.dev",
     "password": "admin123"
+  },
+  {
+    "name": "joy",
+    "email": "test@sajjatjoy.me",
+    "password": "adminJOY"
   }
 ]

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="theme/theme01.css">
+</head>
+<body>
+    <!-- <button onclick="alertNotify('Your message here', 'success', 200000);">Click</button> -->
+
+    <script src="alertNotify.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            alertNotify('This is a success message', 'success', 2000000);
+            alertNotify('This is an error message', 'error', 3000000);
+            alertNotify('This is an warning message', 'warning', 3000000);
+        });
+    </script>
+</body>
+</html>

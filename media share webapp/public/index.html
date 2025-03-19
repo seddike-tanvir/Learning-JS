@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube-like Media Player</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h3>Menu</h3>
+        <ul>
+            <li><a href="#" id="home-link">Home</a></li>
+            <li><a href="#" id="audio-link">Audio</a></li>
+            <li><a href="#" id="video-link">Video</a></li>
+        </ul>
+        <button id="theme-toggle">Dark Mode</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Welcome to My Media Player</h1>
+        <div id="file-grid" class="file-grid"></div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup">
+        <span class="close">&times;</span>
+        <span class="minimize">-</span>
+        <video id="video-player" controls style="display:none;"></video>
+        <audio id="audio-player" controls style="display:none;"></audio>
+    </div>
+    <div id="popup-background"></div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

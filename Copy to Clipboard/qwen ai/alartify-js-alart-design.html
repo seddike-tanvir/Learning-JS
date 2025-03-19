@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Alertify.js CDN -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+    <style>
+        /* কাস্টম নিওন থিম */
+        .alertify {
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* সাকসেস অ্যালার্টের মূল কন্টেইনার */
+        .alertify .ajs-dialog {
+            background: #0a0a0a !important;
+            border: 2px solid #00f3ff !important;
+            box-shadow: 
+                0 0 15px #00f3ff,
+                0 0 30px #00f3ff,
+                0 0 45px #00f3ff;
+            animation: neon-glow 2s infinite alternate;
+        }
+
+        /* টেক্সট স্টাইল */
+        .alertify .ajs-message {
+            color: #00f3ff !important;
+            text-shadow: 0 0 5px #00f3ff;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        /* বাটন স্টাইল */
+        .alertify .ajs-buttons button {
+            background: #000 !important;
+            color: #00f3ff !important;
+            border: 1px solid #00f3ff !important;
+            padding: 8px 20px !important;
+            transition: all 0.3s ease;
+        }
+
+        .alertify .ajs-buttons button:hover {
+            background: #00f3ff !important;
+            color: #000 !important;
+            box-shadow: 0 0 10px #00f3ff;
+        }
+
+        /* নিওন এনিমেশন */
+        @keyframes neon-glow {
+            from {
+                box-shadow: 
+                    0 0 10px #00f3ff,
+                    0 0 20px #00f3ff;
+            }
+            to {
+                box-shadow: 
+                    0 0 20px #00f3ff,
+                    0 0 40px #00f3ff,
+                    0 0 60px #00f3ff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showAlert()">অ্যালার্ট দেখান</button>
+
+    <script>
+        function showAlert() {
+            alertify.success('box-shadow');
+        }
+    </script>
+</body>
+</html>
